@@ -1,0 +1,3 @@
+﻿  npc.cpp
+C:\Users\Ben Stynes\Desktop\AILabs\Lab1\Lab1AIReal\Lab1AIReal\npc.h(27,16): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Lab1AIReal.vcxproj -> C:\Users\Ben Stynes\Desktop\AILabs\Lab1\Lab1AIReal\Debug\Lab1AIReal.exe
