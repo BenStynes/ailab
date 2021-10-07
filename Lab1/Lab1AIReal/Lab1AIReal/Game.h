@@ -39,6 +39,7 @@ private:
 	
 	bool m_exitGame; // control exiting game
 	npc m_npc;
+	Player m_player;
 };
 
 #endif // !GAME_HPP

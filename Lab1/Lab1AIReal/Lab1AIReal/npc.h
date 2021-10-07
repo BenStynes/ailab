@@ -24,7 +24,7 @@ private:
 	
 	sf::Texture m_playerTexture; // texture used for sfml logo
 	sf::Sprite m_playerSprite; // sprite used for sfml logom_
-	float m_speed = 0.9;
+	float m_speed = 2;
 
 
 };

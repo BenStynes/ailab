@@ -8,7 +8,7 @@ npc::~npc()
 }
 void npc::move()
 {
-	m_playerSprite.setPosition(m_playerSprite.getPosition().x, m_playerSprite.getPosition().y + 10);
+	m_playerSprite.setPosition(m_playerSprite.getPosition().x, m_playerSprite.getPosition().y + m_speed);
 	
 }
 
@@ -20,6 +20,12 @@ void npc::update(sf::Time t_deltaTime,sf::RenderWindow& t_window)
 	if (m_playerSprite.getPosition().y > t_window.getPosition().y +m_playerSprite.getGlobalBounds().height)
 	{
 		m_playerSprite.setPosition(m_playerSprite.getPosition().x, -m_playerSprite.getGlobalBounds().height);
+	}
+
+
+	if (m_playerSprite.getPosition().y < 0 - m_playerSprite.getGlobalBounds().height)
+	{
+		m_playerSprite.setPosition(m_playerSprite.getPosition().x,t_window.getPosition().y + m_playerSprite.getGlobalBounds().height);
 	}
 }
 

@@ -76,6 +76,7 @@ void Game::processEvents()
 		if (sf::Event::KeyPressed == newEvent.type) //user pressed a key
 		{
 			processKeys(newEvent);
+			m_player.processKeys(newEvent);
 		}
 	}
 }
@@ -91,6 +92,7 @@ void Game::processKeys(sf::Event t_event)
 	{
 		m_exitGame = true;
 	}
+	
 }
 
 /// <summary>
@@ -100,6 +102,7 @@ void Game::processKeys(sf::Event t_event)
 void Game::update(sf::Time t_deltaTime)
 {
 	m_npc.update(t_deltaTime, m_window);
+	m_player.update(t_deltaTime, m_window);
 	if (m_exitGame)
 	{
 		m_window.close();
@@ -114,6 +117,7 @@ void Game::render()
 	m_window.clear();
 
 	m_npc.render(m_window);
+	m_player.render(m_window);
 	m_window.display();
 }
 
@@ -144,6 +148,6 @@ void Game::setupSprite()
 {
 	
 	m_npc.setupSprite(sf::Vector2f{ 200.0f,200.0f });
-	
+	m_player.setupSprite(sf::Vector2f{ 500.0f,700.0f });
 	
 }
