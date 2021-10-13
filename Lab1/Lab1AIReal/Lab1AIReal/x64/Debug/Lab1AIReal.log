@@ -1,0 +1,9 @@
+﻿  Game.cpp
+C:\Users\Ben Stynes\Desktop\AILabs\Lab1\Lab1AIReal\Lab1AIReal\Game.h(12,10): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  main.cpp
+C:\Users\Ben Stynes\Desktop\AILabs\Lab1\Lab1AIReal\Lab1AIReal\Game.h(12,10): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  npc.cpp
+C:\Users\Ben Stynes\Desktop\AILabs\Lab1\Lab1AIReal\Lab1AIReal\npc.h(3,10): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  Player.cpp
+C:\Users\Ben Stynes\Desktop\AILabs\Lab1\Lab1AIReal\Lab1AIReal\Player.h(3,10): fatal error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  Generating Code...

@@ -1,6 +1,9 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+#include <cmath>
+#include<math.h>
+
 class Player
 {
 
@@ -18,6 +21,8 @@ public:
 
 	void update(sf::Time t_deltaTime, sf::RenderWindow& t_window);
 	void render(sf::RenderWindow& t_window);
+
+	void rotation();
 private:
 
 
@@ -26,7 +31,10 @@ private:
 
 	sf::Texture m_playerTexture; // texture used for sfml logo
 	sf::Sprite m_playerSprite; // sprite used for sfml logom_
-	float m_speed = 2.0F;
-	const float MAX_SPEED = 12;
-
+	
+	 float m_speed = 5;
+	const float MAX_SPEED = 10;
+	float m_rotation = 0;
+	sf::Vector2f m_pos;
+	sf::Vector2f m_velocity;
 };
